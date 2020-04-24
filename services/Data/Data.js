@@ -148,7 +148,7 @@ class Data {
 
 	// For testing -- unit, implementation or end-to-end
 	async resetMockHyperlinks() {
-		DataLocal && await DataLocal.deleteIndexedDb();
+		DataLocal && await DataLocal.deleteDb();
 		this.hyperlinks = {};
 	}
 
