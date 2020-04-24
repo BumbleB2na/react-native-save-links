@@ -126,7 +126,7 @@ class Data {
 	}
 
 	async loadLocalHyperlinks() {
-		DataLocal && await DataLocal.initIndexedDb();
+		DataLocal && await DataLocal.initDb();
 		const hyperlinks = DataLocal && await DataLocal.getHyperlinks();
 		if(!hyperlinks)
 			return;

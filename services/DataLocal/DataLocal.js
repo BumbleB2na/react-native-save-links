@@ -43,7 +43,7 @@ class DataLocal {
 		}
 	}
 
-	async initIndexedDb() {
+	async initDb() {
 		if(this._db) {
 			return;  // IndexedDB was already initialized once before
 		}
